@@ -85,7 +85,7 @@ h1 {
 .modal button {
   cursor: pointer;
   border: 1px solid rgb(64, 109, 109);
-  border-radius: 15px;
+  border-radius: 30px;
   color: rgb(64, 109, 109);
   padding: 10px 10px;
 }

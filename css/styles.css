@@ -1,10 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime&family=Inter&family=Josefin+Sans&family=Quicksand:wght@300;400&family=Raleway&family=Roboto:ital,wght@0,300;1,100&family=Shadows+Into+Light&display=swap');
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
+  background-color: gainsboro;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+} 
 
 h1 {
-  color: #333;
+  color:rgb(64, 109, 109);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 15px;
+  text-align: center;
+  color:rgb(64, 109, 109);
+  justify-content: space-between;
+  
+}
+
+.country-card {
+  text-align: center;
+  padding: 10px;
+  width: 150px; 
+  background-color: white;
+  border: 1px solid #d1cccc;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.country-flag {
+  width: 130px; 
+  object-fit: cover;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+ 
+}
+
+.modal-left {
+  flex: 1;
+}
+
+.modal-right {
+  flex: 2;
+  padding: 0 20px;
+  color: rgb(64, 109, 109);
+}
+
+.modal-flag {
+  max-width: 300%;
+  height: auto;
+  border-radius: 3px;
+}
+.modal img {
+  max-width: 200px;
+  margin-top: 17px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.modal button {
+  cursor: pointer;
+  border: 1px solid rgb(64, 109, 109);
+  border-radius: 15px;
+  color: rgb(64, 109, 109);
+  padding: 10px 10px;
+}
+.modal button:hover {
+  background-color: rgb(64, 109, 109);
+  color: white;
 }
